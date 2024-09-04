@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yendir">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>YENDIR</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href=custom_css/styles.css>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <!-- --------- JQUERY ----------->
+  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <!-- Material Design JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <!--============ Link for Angular ============-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+  <!--======== Source for Angular ========-->
+  <script src="js/app.js"></script>
+
+
+  <style type="text/css">
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body ng-controller="yendir" ng-init="get_product();">
+
+  <!-- <div ng-include="'header.html'"></div> -->
+   <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <ul class="navbar-nav mr-auto">
+          <li class="nav-item ml-3">
+            <img class="logoMain" src="images/logo.png" onclick="location.href ='index.html'">
+            <span class="logoLabel" onclick="location.href ='index.html'">Luxury Pashmina</span>
+          </li>
+        </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" saria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link jumper" href="index.html">New Arrivals</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="product_list.html">Shop Collection</a>
+          </li>
+          <!-- <li class="nav-item mr-3">
+           <button type="button" class="navBtn">APPLY</button>
+          </li> -->
+         <!--  <li class="nav-item mr-3">
+            <a class="nav-link" href="#">About Us</a>
+          </li> -->
+        </ul>
+      </div>
+  </nav><br><br><br><br><br><br><br><br>
+  <!-- Navbar -->
+
+    <!--Main layout-->
+    <main>
+      <div class="container">
+        <div class="row mob-d-block mt--100">
+          <div class="col-6 mr-md-5 mr-lg-5 mr-xl-5 m-wid-mob">
+            <div class="popup-gallery">
+
+              <a href="images/product/{{img_id}}a.JPG"><img class="img-mob" src="images/product/{{img_id}}a.JPG" width="500" height="600"></a><br><br>
+
+
+
+            </div>
+          </div>
+          <div class="col-4 ml- md-5 ml- lg-5 ml- xl-5 m-wid-mob"><br><br><br>
+            <span class="name">{{products[index].name}}</span><br><hr>
+            <span class="price">{{products[index].price}}</span><br><br><br>
+
+            <form class="">
+  
+              <a class="btn btn-lg btn-contact pb-4" href="https://wa.me/27790946571?text=I'm intrested in your product" target="_blank">Contact us to Buy
+              <i class="fab fa-whatsapp"></i></a><br>
+
+            </form><br><hr>
+
+            <p class="lead font-weight-bold">Product Detail:</p>
+
+            <p class="description">{{products[index].description}}</p><br>
+
+            
+
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/yendir.luxurypashmina/" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="https://www.instagram.com/_yendir/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2019 Copyright: 
+      <a href="index.html" target="_blank"> YENDIR Luxury Pashmina </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+
+  
+  $(document).ready(function() {
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    }
+  });
+});
+
+  $("img").on("error", function() {
+  $(this).hide();
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Niconne');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+body,html{
+	/*width: 1366px;
+	margin:auto !important;*/
+	overflow-x: hidden !important;
+	width: 100%;
+	font-family: 'Nunito', sans-serif !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1C2331; 
+  border-radius:20px;
+}
+
+.logoLabel{
+	font-family: 'Niconne', cursive;
+	font-size: 30px;
+	margin-left: 15px;
+	font-weight: normal;
+	color: white;
+	cursor:default;
+}
+.nav-item{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(59, 59, 59);
+}
+.navBtn{
+	font-family: 'Nunito', sans-serif !important;
+	background-color: transparent;
+	border-radius: 30px !important;
+	font-weight: bolder;
+	border: 3px solid #fff !important;
+	padding: 10px 50px !important;
+	outline: none !important;
+	color: #fff;
+}
+.navBtn:hover{
+	background-color: white;
+	color: black;
+}
+.logoMain{
+	height: 70px;
+}
+.d-block{
+	height: 600px !important;
+}
+.carousel-caption{
+	bottom: 40% !important;
+	text-align: right !important;
+}
+.carousel-text{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 50px;
+	font-weight: bolder;
+}
+.productHeading{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 30px;
+	border-bottom: 2px solid grey;
+}
+.carousel-detail{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 20px;
+	line-height: 2;
+	margin:auto;
+	width: 70%;
+}
+.new-arrivalHead{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 60px;
+	text-decoration: underline;
+}
+.kashmir-head{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 60px;
+	font-weight: bold;
+}
+.whoweare{
+	background-color: #fcf5e8;
+	padding: 100px 10%;
+}
+.head-2{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 32px;
+}
+.head-3{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 22px;
+	width: 800px;
+}
+
+@media (max-width: 767px) and (min-width: 400px), (max-width: 850px) and (min-width: 800px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+	    max-height: 340px;
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    margin-top: 20px;
+	    overflow-y: hidden !important;
+	}
+}
+
+/***************************** Product Detail *******************************/
+
+.product_img{
+	cursor: zoom-in;
+	margin:10px;
+	width: 80px;
+	height: 80px;
+}
+.name{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 22px;
+}
+.price{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 28px;
+	font-weight: bold;
+}
+.btn-custom{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
+	background-color: #212529 !important; 
+	color: white !important;
+}
+.btn-contact{
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
+	background-color: white !important; 
+	color: black !important;
+	border: 1px solid gray !important;
+	border-radius: 5px;
+	box-shadow: none;
+
+}
+.fa-whatsapp{
+	font-size: 40px !important;
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+	color: #25D366;
+}
+.fa-instagram{
+	font-size: 40px !important;
+	color:brown;
+}
+.fa-twitter{
+	font-size: 40px !important;
+	color:#00acee;
+}
+.fa-facebook-f {
+	font-size: 40px !important;
+	color:#3b5998;
+}
+.margin-l{
+	margin-left: 3rem;
+}
+
+.m-wid-mob{
+	max-width: 100% !important;
+}
+
+
+
+/*====================================================*/
+@media (max-width: 992px){
+.navbar .nav-item .nav-link {
+    padding-top: 30px;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .logoLabel{
+  	font-size: 22px;
+  }
+  .logoMain{
+  	height: 40px;
+  }
+  .new-arrivalHead{
+  	font-size: 30px;
+  }
+  .kashmir-head{
+  	font-size: 30px;
+  }
+  .head-2{
+  	font-size: 24px;
+  }
+  .head-3{
+  	font-size: 18px;
+  }
+  .mob-d-block{
+  	display: block !important;
+  }
+  .mob-d{
+  	min-width: 150px !important;
+  	max-width: 400px !important;
+  	margin-left: auto !important;
+  	margin-right: auto !important;
+  }
+  .navbar{
+  	padding: 10px !important;
+  }
+  .card{
+  	margin-left: auto !important;
+  	margin-right: auto !important;
+  }
+  .m-wid-mob{
+  	max-width: inherit !important;
+  	text-align: center !important;
+  }
+  .img-mob{
+  	width: 300px;
+  	height: 300px;
+  }
+  .mt--100{
+  	margin-top: -100px !important;
+  }
+  .btn.btn-lg {
+    padding: 1rem 1rem !important;
+	}
+	::-webkit-scrollbar { 
+	display: none; 
+	}
+}
+@media (min-width: 701px) and (max-width: 991px) {
+	.m-wid-mob{
+		flex: unset !important;
+	}
+	
+}
+
+@media (min-width: 100px) and (max-width: 1800px) {
+	.mob-d{
+	max-width: inherit !important;
+	}
+	
+}	
